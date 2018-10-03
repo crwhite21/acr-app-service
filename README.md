@@ -22,6 +22,14 @@
 
     ![Create azcli file](images/create-azcli-file.png)
 
+1. If you are not logged in to Azure CLI, then enter the following into `create-acr.azcli` and run it:
+
+    ```bash
+    az login
+    ```
+
+    ![Azure CLI Login](images/azcli-login.png)
+
 1. Enter the following into `create-acr.azcli`:
 
     ```bash
