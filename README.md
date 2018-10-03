@@ -52,7 +52,12 @@
 
     ![Run command](images/azcli-create-acr-run.png)
 
-1. Run the VS Code Command `Docker: Add Docker files to workspace`.
+1. Run the VS Code Command `Docker: Add Docker files to workspace`. This will add several Docker configuration files necessary to create a container for your app.
+
+    - `.dockerignore`: List of files/folders to exclude from the container. [More info](https://docs.docker.com/engine/reference/builder/#dockerignore-file).
+    - `docker-compose.yml`: Configuration for [Docker Compose](https://docs.docker.com/compose/overview/) which provides an easy way to start multi-container environments with a single command. For instance, if you want to start a database container alongside your app.
+    - `docker-compose.debug.yml`: Similar to `docker-compose.yml`, but runs your Node.js app with the `--inspect` flag and exposes port 9229 so you can use debug tools. [More info](https://nodejs.org/en/docs/guides/debugging-getting-started/) on debugging Node.js apps.
+    - `Dockerfile`: Defines steps to build your Docker container. [More info](https://docs.docker.com/engine/reference/builder/).
 
     ![Add Docker files](images/add-docker-files-to-workspace.png)
 
