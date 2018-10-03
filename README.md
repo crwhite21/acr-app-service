@@ -6,7 +6,7 @@
 - Git
 - Node 8 LTS or later
 - VS Code
-    - Azure Tools (ms-vscode.vscode-node-azure-pack)
+    - Azure Tools ([ms-vscode.vscode-node-azure-pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack))
 
 ## Steps
 1. Run the command `npx create-next-app my-app` in a terminal.
