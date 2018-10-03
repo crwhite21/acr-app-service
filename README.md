@@ -116,7 +116,7 @@
 
     ![Wait](images/docker-push-wait.png)
 
-1. Deploy the image to Azure App Service.
+1. Now that your container is in your Azure Container Registry you can easily deploy the image to Azure App Service. This creates a [Web App for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/) that pulls your custom image from your registry and deploys it. Open the context menu on your container and click `Deploy Image to Azure App Service`.
 
     ![Deploy](images/deploy-image.png)
 
