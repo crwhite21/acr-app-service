@@ -87,9 +87,14 @@
 
     ![Add tag](images/docker-build-image-tag.png)
 
-1. Open a terminal and login to your Azure Container Repository (`az acr login --name youracrname`).
+1. Login to your Azure Container Repository using `create-acr.azcli`.
 
-    ![Login](images/az-acr-login.png)
+    ```bash
+    # Note: Replace reactappregistry01 with your ACR's name
+    az acr login --name reactappregistry01
+    ```
+
+    ![Login](images/azcli-acr-login.png)
 
 1. Push your image to Azure Container Repository.
 
