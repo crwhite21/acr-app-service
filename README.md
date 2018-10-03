@@ -2,6 +2,7 @@
 
 ## Prerequisites
 - Azure Account
+    - If you don't already have an Azure subscription, create one [here](https://azure.microsoft.com/en-us/free/).
 - Azure CLI
 - Git
 - Node 8 LTS or later
