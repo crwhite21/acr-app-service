@@ -96,6 +96,10 @@
 
     ![Login](images/azcli-acr-login.png)
 
+1. Switch to the Docker tab on the Activity Bar (far left).
+
+    ![Switch to Docker](images/switch-to-docker.png)
+
 1. Push your image to Azure Container Repository.
 
     ![Push image](images/docker-push.png)
