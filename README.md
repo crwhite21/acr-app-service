@@ -7,7 +7,6 @@
 - Node 8 LTS or later
 - VS Code
     - Azure Tools (ms-vscode.vscode-node-azure-pack)
-    - Docker CLI Extension (peterjausovec.vscode-docker)
 
 ## Steps
 1. Run the command `npx create-next-app my-app` in a terminal.
