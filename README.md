@@ -18,19 +18,39 @@
 
     ![Open VS Code](images/open-code.png)
 
-1. Create an `create-acr.azcli` file and enter the following:
-
-    ```bash
-    az group create --name ReactApp --location westus
-    # replace reactappregistry01 with a unique name
-    az acr create --name reactappregistry01 --resource-group ReactApp --admin-enabled true --sku Basic
-    ```
+1. Create a `create-acr.azcli` file.
 
     ![Create azcli file](images/create-azcli-file.png)
 
-1. Run each command in order.
+1. Enter the following into `create-acr.azcli`:
 
-    ![Run line in terminal](images/run-line-in-terminal.png)
+    ```bash
+    # Note: Replace westus with your preferred location
+    az group create --name ReactApp --location westus
+    ```
+
+    ![Create group](images/azcli-create-group.png)
+
+    Notice that as you type the [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli) extension (installed by [Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)) provides detailed information about the command and auto-completion. If you would like more information about a command you can hover over it to get more details.
+
+    ![azcli details](images/azcli-details.png)
+
+1. Run the command.
+
+    ![Run command](images/azcli-create-group-run.png)
+
+1. In `create-acr.azcli` replace the previous command with the following:
+
+    ```bash
+    # Note: Replace reactappregistry01 with a unique name
+    az acr create --name reactappregistry01 --resource-group ReactApp --admin-enabled true --sku Basic
+    ```
+
+    ![Create azcli file](images/azcli-create-acr.png)
+
+1. Run the command.
+
+    ![Run command](images/azcli-create-acr-run.png)
 
 1. Run the VS Code Command `Docker: Add Docker files to workspace`.
 
